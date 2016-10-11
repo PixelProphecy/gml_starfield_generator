@@ -1,6 +1,8 @@
 # gml_starfield_generator
 A script to generate starfields in GameMaker’s GML language.
 
+![ScreenShot](https://raw.github.com/PixelProphecy/_images/gh-pages/gml_starfield_generator_screen_1.png)
+
 ## Overview
 Since I found drawing starfields in Photoshop and importing them into GM a waste of texture-page space, I created this little script that creates starfields from scratch onto a transparent surface which can be drawn onto any background. The script is highly customizable and extensively commented so it should be fairly easy to use and modify.
 
