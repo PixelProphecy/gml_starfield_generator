@@ -12,8 +12,9 @@ Since I found drawing starfields in Photoshop and importing them into GM a waste
 3. Create a new object
 4. Add a Creation event with an "Execute Script" action and select `scr_fx_starfield_init`
 5. Add a Draw event, also with an "Execute Script" action and select `scr_fx_starfield_draw`
+6. Modify the values in `scr_fx_starfield_init` to your needs.
 
 To create a new starfield, just create an instance of the object at any coordinates.
 
 ## Notes
-Since the starfield is drawn onto a surface that is inherently volatile, it's good practice to check whether it still exists and re-draw it, if necessary. Surfaces get destroyed when switching to/from full screen, for example. 
+Since the starfield is drawn onto a surface that is inherently volatile, it’s good practice to check whether it still exists and re-draw it, if necessary. Surfaces get destroyed when switching to/from full screen, for example.
