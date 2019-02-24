@@ -16,6 +16,8 @@
     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 *********************************************************************************************/
+
+// --- SETUP ---------------------------------------------------
     
     var surface_width          = room_width;  // set the surface width here    
     var surface_height         = room_height; // set the surface height here
@@ -27,7 +29,7 @@
     var stars_medium           = stars_small / 8; // count of medium sized stars
 
     var stars_big_radius       = 8;           // radius in pixels for big stars    
-    var stars_big_have_shape   = true;        // if true, a little plus-shape will be drawn at the center of each big star. looks best stating at sizes from 10    
+    var stars_big_have_shape   = true;        // if true, a little plus-shape will be drawn at the center of each big star. Looks best starting from sizes 10 and up    
     var stars_big              = stars_small / 300; // count of big stars
 
     var stars_color_inner      = c_white;     // color of star center (usually white)
@@ -42,7 +44,7 @@
     var star_clumping_probability =   .85;      // between 0 to 1, where 1 = all the smalls stars are in one clump, 0 = completely random
     var star_clumping_distance    = 40;         // neighborhood in pixels in which stars will be created when they clump
 
-    // ----------- so let's do this ---------------
+// -------------------------------------------------------------
     
     surf_starfield = 0;  // initializes starfield surface variable
     
