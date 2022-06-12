@@ -10,8 +10,16 @@ Since I found drawing starfields in Photoshop and importing them into GM a waste
 1. Download the two provided GML files
 2. Import the two files as scripts into your Game Maker project
 3. Create a new object
-4. Add a Creation event with an "Execute Script" action and select `scr_fx_starfield_init`
-5. Add a Draw event, also with an "Execute Script" action and select `scr_fx_starfield_draw`
+4. Add a Creation event and type the following in it: 
+
+        surf_starfield = undefined;
+        surf_starfield = scr_fx_starfield_init(surf_starfield)
+
+5. Add a Draw event then type the folling:
+
+        scr_fx_starfield_draw(surf_starfield)
+
+        
 6. Modify the values in `scr_fx_starfield_init` to your needs.
 
 To create a new starfield, just create an instance of the object at any coordinates.
