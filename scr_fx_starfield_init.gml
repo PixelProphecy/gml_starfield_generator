@@ -18,7 +18,8 @@
 *********************************************************************************************/
 
 // --- SETUP ---------------------------------------------------
-    
+function scr_fx_starfield_init(surf_starfield){    
+  
     var surface_width          = room_width;  // set the surface width here    
     var surface_height         = room_height; // set the surface height here
  
@@ -52,7 +53,7 @@
     prev_y = 0;
     
     // creates a new surface with the given dimensions
-    {
+
        surf_starfield = surface_create(surface_width, surface_height);
        surface_set_target(surf_starfield);
        draw_clear_alpha(c_black, 0);
@@ -194,4 +195,6 @@
        // ends drawing to this surface
        surface_reset_target();
        
-    } // end of "create starfield"
+
+  return surf_starfield
+}
